@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+  tailwind.config = { 
+    theme : {
+      extend : {
+        colors: { 
+          Rosa: "#F195E0",
+          borde: "#CD95E1"
+        },
+          /*fontFamily : { 
+             osw : ['', '']
+          }*/
+      }
+    }
+  }
+  </script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-pink-200">
+  <div class="w-96 bg-white rounded shadow p-8 flex flex-col items-center">
+    <img src="./assets/Logo.svg" alt="Logo" class="w-36 mb-6"/>
+    <h1 class="text-Rosa text-4xl font-bold text-center mb-8">
+      Iniciar Sesión
+    </h1>
+    <label class="block text-Rosa font-bold text-xl mb-2 w-full">Correo electrónico</label>
+    <input type="email" class="w-full bg-slate-50 border border-borde rounded p-2 mb-4" />
+
+    <label class="block text-Rosa font-bold text-xl mb-2 w-full">Contraseña</label>
+    <input type="password" class="w-full bg-slate-50 border border-borde rounded p-2 mb-4" />
+    <div class="flex items-center mb-4 w-full">
+      <input type="checkbox" class="mr-2"/>
+      <span class="text-purple-400 font-bold text-sm">Recordar la contraseña</span>
+    </div>
+    <button class="bg-Rosa text-white font-bold py-5 px-8 rounded-xl border-2 border-borde">
+      <a href="login.html">
+        Iniciar Sesión
+      </a>
+    </button>
+    <a href="#" class="text-purple-400 font-bold text-center text-sm mt-4">
+      <p>
+       ¿Ha olvidado la contraseña?
+      </p>
+    </a>
+    <footer class="w-full font-bold text-sm text-center bg-white text-Rosa mt-8">
+      Mi Web &copy; 2026
+    </footer>
+    </div>
+</body>
+</html>
